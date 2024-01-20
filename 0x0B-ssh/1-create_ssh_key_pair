@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#bash script to Create an SSH key pair with bits and paraphrase
+ssh-keygen -t rsa -b 4096 -N "betty"
+
