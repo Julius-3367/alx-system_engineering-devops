@@ -1,0 +1,15 @@
+
+If someone types “google.com” into their browser and presses Enter, a series of back-end activities take place. At the beginning, the browser makes a request to a Domain Name System (DNS) resolver for the translation of the domain name "google.com" into an IP address. When the IP address is sorted out, the browser creates a connection using Transmission Control Protocol/Internet Protocol (TCP/IP) to Google's server, mostly over Hypertext Transfer Protocol Secure (HTTPS) for security purposes.
+
+If there’s a firewall in place, it acts as a gatekeeper, checking if everything's legit before allowing the connection to proceed. Assuming all is fine, the browser and server undergo the SSL/TLS encryption handshake, deciding how to keep the data stream secure.
+
+Then load balancers kick in, sending the copies of incoming requests to several servers to avoid any of the servers being overworked.
+
+It starts serving up web pages after receiving the request: delivering static content, routing requests to the appropriate application servers etc. The responsibility of these application servers is the dynamic content such as search queries. They could be required to connect to databases in order to acquire information, for example Google search engine has vast index of web pages so as to fetch the best results.
+
+Therefore, people do not just browse "google.com" by normal clicking, but is more complicated than that. The whole symphony of performance backstage, including DNS resolution, valid certificates, traffic management, and heavy-duty server work is to bring you those search results instantly.
+
+
+
+
+
